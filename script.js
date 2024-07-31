@@ -4,7 +4,7 @@ document.getElementById('prediction-form').addEventListener('submit', function (
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    fetch('http://127.0.0.1:8000/predict?' + new URLSearchParams(data), {
+    fetch(' https://ziadsleman.github.io/TrainAPI/predict?' + new URLSearchParams(data), {
         method: 'GET'
     })
     .then(response => response.json())
